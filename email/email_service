@@ -4,11 +4,11 @@ def send_email(to_email, subject, body):
     # Configurar el servidor de correo (esto usa Gmail como ejemplo)
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('your_email@gmail.com', 'your_password')  # Usa tus credenciales
+    server.login('matixd123423@gmail.com', 'ezrabridger12')  # Usa tus credenciales
 
     message = f'Subject: {subject}\n\n{body}'
-    server.sendmail('your_email@gmail.com', to_email, message)
+    server.sendmail('matixd123423@gmail.com', to_email, message)
     server.quit()
 
 # Ejemplo de uso cuando el estado del pedido cambia
-send_email('cliente@example.com', 'Actualización de Pedido', 'Tu pedido ha sido actualizado a Enviado.')
+send_email('frodoyt332@gmail.com', 'Actualización de Pedido', 'Tu pedido ha sido actualizado a Enviado.')
