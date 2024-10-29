@@ -21,11 +21,11 @@ class OrderUser(HttpUser):
             stub = order_pb2_grpc.OrderServiceStub(channel)
             response = stub.PlaceOrder(order_pb2.OrderRequest(
                 product_name="Laptop",
-                price=1200.0,
+                price=12000,
                 payment_gateway="Webpay",
                 card_brand="VISA",
                 bank="Banco Estado",
-                shipping_address="Calle Falsa 123",
+                shipping_address="Jose Morales 1046",
                 region="Santiago",
                 email="frodoyt332@gmail.com"
             ))
